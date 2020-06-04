@@ -24,13 +24,20 @@
         "start": "node dist/index.js"
     },
     "dependencies": {
+        "apollo-server-express": "^2.14.1",
+        "express": "^4.17.1",
         "module-alias": "^2.2.2",
-        "source-map-support": "^0.5.16"
+        "pg": "^8.2.1",
+        "reflect-metadata": "^0.1.13",
+        "source-map-support": "^0.5.16",
+        "type-graphql": "^1.0.0-rc.2",
+        "typeorm": "^0.2.25"
     },
     "devDependencies": {
         "@babel/core": "^7.9.6",
         "@babel/preset-env": "^7.9.6",
         "@babel/preset-typescript": "^7.9.0",
+        "@types/express": "^4.17.6",
         "@types/node": "^13.7.7",
         "@typescript-eslint/eslint-plugin": "2",
         "babel-plugin-module-resolver": "^4.0.0",
