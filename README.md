@@ -1,5 +1,4 @@
-# Typescript prettier-standard template
-A simple template to initiate writing typescript code with linter and basic build commands.
+# Example with Typescript, graphql y typeorm
 
 Dependencies Installation:
 ```bash
