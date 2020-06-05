@@ -1,4 +1,4 @@
-# Typescript, graphql y typeorm example
+# Typescript, graphql and typeorm example
 
 Dependencies Installation:
 ```bash
