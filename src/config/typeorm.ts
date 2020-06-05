@@ -1,6 +1,6 @@
-import { createConnection, Connection } from 'typeorm'
-import path from 'path'
+import { User } from '@/entities/User'
 import { defaultIfNaN } from '@/utils/number'
+import { Connection, createConnection } from 'typeorm'
 
 let connection: Connection | null = null
 
@@ -13,9 +13,8 @@ export async function connect(): Promise<Connection> {
             password: process.env.DB_PASSWORD ?? 'root',
             port: defaultIfNaN(process.env.DB_PORT, 5432),
             database: 'test',
-            entities: [
-                path.join(__dirname, '..', 'entities', '**', '*.ts')
-            ]
+            entities: [User],
+            synchronize: true
         }).catch((err) => {
             console.error(err)
             process.exit(1)
