@@ -1,7 +1,4 @@
-export const defaultIfNaN = (
-    value: number | string | undefined | null,
-    defaultValue: number
-): number => {
+export const defaultIfNaN = (value: any, defaultValue: any): any => {
     if (value === null) {
         return defaultValue
     }
