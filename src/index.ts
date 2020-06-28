@@ -5,7 +5,7 @@ import { startServer } from './server'
 import { connect } from './config/typeorm'
 import { defaultIfNaN } from './utils/number'
 
-const serverPort = defaultIfNaN(process.env.SERVER_PORT, 3000)
+const serverPort: number = defaultIfNaN(process.env.SERVER_PORT, 3000)
 
 main().catch(console.error)
 
